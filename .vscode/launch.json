@@ -5,7 +5,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch Tidings",
+            "request": "launch",
+            "mainClass": "edu.giardim.Assign01.Tidings",
+            "projectName": "CS_249_giardim_940ca72e"
+        },
         {
             "type": "java",
             "name": "Launch Current File",
