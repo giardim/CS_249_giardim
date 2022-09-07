@@ -15,6 +15,7 @@
         "/home/michaelg/Java/testng-7.7.0-20220518.034525-1.jar",
         "/home/michaelg/Java/jcommander-1.81.jar"
     ],
+    "java.home": "/home/michaelg/Java/jdk-18.0.2.1",
     "java.debug.settings.vmArgs": "--module-path \"/home/michaelg/Java/javafx-sdk-18.0.2/lib\" --add-modules javafx.controls,javafx.fxml",
     "java.test.config": [
     {
