@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Wasteland",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_02.Wasteland",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch HowdyFX",
             "request": "launch",
             "mainClass": "edu.realemj.Example.HowdyFX",
