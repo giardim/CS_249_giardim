@@ -5,7 +5,7 @@ public class HowdyPrinter {
         System.out.println("HENLO AND GREETS FRENS!  HOW ARE YOU?");
     }
 
-    public static String getPassword() {
-        return "1234";
+    public static String getPassword() { 
+        return "12345";
     }
 }
