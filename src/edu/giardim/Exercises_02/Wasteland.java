@@ -13,5 +13,7 @@ public class Wasteland {
 
         System.out.println("Bob: "+ bob.getHealth());
         System.out.println("Sue: "+ sue.getHealth());
+        System.out.println("Ted: " + ted.getHealth());
+        System.out.println("Carl: "+ carl.getHealth());
     }
 }
