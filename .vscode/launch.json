@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FoodRationer",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_03.FoodRationer",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch Wasteland",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_02.Wasteland",
