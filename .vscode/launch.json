@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StringLand",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_04.StringLand",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch FoodRationer",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_03.FoodRationer",
