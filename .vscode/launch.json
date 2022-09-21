@@ -7,6 +7,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Shopping",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_06.Shopping",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
+            "name": "Launch DisasterCheck",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_05.DisasterCheck",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
+            "name": "Launch BooleanLand",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_05.BooleanLand",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch StringLand",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_04.StringLand",
