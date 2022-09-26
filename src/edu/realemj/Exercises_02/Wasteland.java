@@ -12,7 +12,7 @@ public class Wasteland {
         sue.setHealth(91);
 
         System.out.println("Bob: " + bob.getHealth());
-        System.out.println("Sue: " + sue.getHealth());
+        System.out.println("Sue: " + sue.getHealth()); 
 
     }    
 }

@@ -1,10 +1,11 @@
 package edu.realemj.Exercises_02;
 
 public class NPC {
+    
     private int health;
     private int strength;
     private char relationship;
-
+    
     public NPC() {
 
     }
