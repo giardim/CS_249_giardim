@@ -27,16 +27,112 @@ public class Supplies {
 
     public boolean setfood(int food)
     {
-        totalFood = food;
-        if (totalFood < 0)
+        if (food < 0)
         {
-            totalFood = 0;
             return false;
         }
         else 
         {
+            totalFood = food;
             return true;
         }
     }
+
+    public boolean setBullets(int bullets)
+    {
+        if (bullets < 0)
+        {
+            return false;
+        }
+        else 
+        {
+            totalBullets = bullets;
+            return true;
+        }
+    }
+
+    public boolean setAxles(int axle)
+    {
+        if (axle < 0)
+        {
+            return false;
+        }
+        else 
+        {
+            totalAxles = axle;
+            return true;
+        }
+    }
+
+    public boolean addFood(int food)
+    {
+        boolean success = false;
+        if (food >= 0)
+        {
+            totalFood += food;
+            success =  true;
+        }
+        else 
+        {
+            food = -food;
+            if (totalFood >= food)
+            {
+                totalFood -= food;
+                success = true;
+            }
+        }
+        return success;
+    }
+
+    public boolean addBullets(int bullets)
+    {
+        boolean success = false;
+        if (bullets >= 0)
+        {
+            totalBullets += bullets;
+            success =  true;
+        }
+        else 
+        {
+            bullets = -bullets;
+            if (totalBullets >= bullets)
+            {
+                totalBullets -= bullets;
+                success = true;
+            }
+        }
+        return success;
+    }
+
+    public boolean addAxles(int axle)
+    {
+        boolean success = false;
+        if (axle >= 0)
+        {
+            totalAxles += axle;
+            success =  true;
+        }
+        else 
+        {
+            axle = -axle;
+            if (totalAxles >= axle)
+            {
+                totalAxles -= axle;
+                success = true;
+            }
+        }
+        return success;
+    }
+
+    public String toString()
+    {
+        String s = "";
+        s += "******** SUPPLIES ********\n";
+        s += "* Total food: " + totalFood + "\n";
+        s += "* Total bullets: " + totalBullets+ "\n";
+        s += "* Total axles: " + totalAxles + "\n";
+        s += "**************************\n";
+        return s; 
+    } 
 }
 

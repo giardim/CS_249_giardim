@@ -6,9 +6,7 @@ public class Shopping {
     {
         Scanner input = new Scanner(System.in);
 
-        int totalFood = 0;
-        int totalBullets = 0;
-        int totalAxles = 0;
+        Supplies supplies = new Supplies();
         boolean keepShopping = true;
 
         do 
@@ -25,9 +23,30 @@ public class Shopping {
 
             switch (item)
             {
-                case "food" -> totalFood += cnt;
-                case "bullet", "bullets" -> totalBullets += cnt;
-                case "axle", "axles" -> totalAxles += cnt;
+                case "food" -> 
+                {
+                    if(!supplies.addFood(cnt))
+                    {
+                        System.out.println("You do not have enough food");
+                        keepShopping = false;
+                    }
+                }
+                case "bullet", "bullets" -> 
+                {
+                    if(!supplies.addBullets(cnt))
+                    {
+                        System.out.println("You do not have enough food");
+                        keepShopping = false;
+                    }
+                }
+                case "axle", "axles" -> 
+                {
+                    if(!supplies.addAxles(cnt))
+                    {
+                        System.out.println("You do not have enough food");
+                        keepShopping = false;
+                    }
+                }
                 default ->  
                 {
                     System.out.println("I'm sorry but we don't carry " + item);
@@ -36,18 +55,9 @@ public class Shopping {
 
             }
 
-        System.out.println("Total food: " + totalFood);
-        System.out.println("Total bullets: " + totalBullets);
-        System.out.println("Total axles: " + totalAxles);
+        System.out.println(supplies);
 
         } while (keepShopping);
-
-
-        
-
-        
-
-
         input.close();
     }
 }
