@@ -1,5 +1,5 @@
-// NOTE: CHANGE package realemj to YOUR SITNETID!!!
-package edu.realemj.Assign02;
+
+package edu.giardim.Assign02;
 
 // Leave this realemj alone
 import edu.realemj.Testing.*;

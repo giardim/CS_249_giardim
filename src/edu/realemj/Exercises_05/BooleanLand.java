@@ -13,6 +13,7 @@ public class BooleanLand {
         int cnt = 10;
         int randIndex = (int)(Math.random()*cnt);
         System.out.println(randIndex);
+        input.close(); 
     }
 
     public static void fancyNumberPrint(Scanner in) {
@@ -21,5 +22,5 @@ public class BooleanLand {
             int x = in.nextInt();
             System.out.println("$$$ " + x + " $$$");
         }
-    }    
+    }   
 }
