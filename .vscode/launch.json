@@ -7,6 +7,7 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "Launch Stats",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_08.Stats",
@@ -17,6 +18,11 @@
             "name": "Launch OrganTrail",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_08.OrganTrail",
+=======
+            "name": "Launch VitalStats",
+            "request": "launch",
+            "mainClass": "edu.giardim.Assign02.VitalStats",
+>>>>>>> Assign02
             "projectName": "CS_249_giardim_3d34c34e"
         },
         {
