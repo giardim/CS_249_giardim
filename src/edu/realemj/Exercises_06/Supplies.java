@@ -55,7 +55,7 @@ public class Supplies {
         boolean success = false;
         if(food >= 0) {
             totalFood += food;
-            success = true;
+            success = true;            
         }
         else {
             food = -food;
