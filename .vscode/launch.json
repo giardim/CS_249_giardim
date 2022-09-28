@@ -7,6 +7,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Stats",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_08.Stats",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
+            "name": "Launch OrganTrail",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_08.OrganTrail",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch L33t",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_06.L33t",
