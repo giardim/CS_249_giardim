@@ -35,7 +35,11 @@ public class VitalStats {
         int bmi = (int)((703 * weight) / (height * height));
         //Tell the user their info
         System.out.println("NAME: " + lName + ", " + fName);
-        System.out.printf("WEIGHT: %.1f lbs.\n" , weight);
+        //NOTE: Using printf here may make the program
+        //  safer as you can format it to always print to
+        //  the tenths place, but the assignment says to use
+        //  println
+        System.out.println("WEIGHT: " + weight + " lbs.");
         System.out.println("HEIGHT: " + ft + "'-" + inches + "\"");
         System.out.println("BMI: " + bmi);
         //Close the input function
