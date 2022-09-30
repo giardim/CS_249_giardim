@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Stats",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_08.Stats",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch VitalStats",
             "request": "launch",
             "mainClass": "edu.giardim.Assign02.VitalStats",
