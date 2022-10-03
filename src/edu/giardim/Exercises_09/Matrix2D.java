@@ -6,10 +6,32 @@ public class Matrix2D {
     public Matrix2D(int rows, int cols){
         data = new double[rows][cols];
     }
+    
+    public Matrix2D(double [] [] other){
+        data = new double[other.length][];
+        for (int i = 0; i < data.length; ++i){
+            data[i] = new double [other[i].length];
+            for (int j = 0; j < data[i].length; ++j){
+                data[i][j] = other[i][j];
+            }
+        }
+    }
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < data.length; ++i){
+            for (int j = 0; j < data[i].length; ++j)
+            {
+                sb.append(data[i][j] + "\t");
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
 
     public boolean isInBounds(int r, int c)
     {
-        return ((r < data.length && r >= 0) && (c < data[r].length && c >= 0))
+        return ((r < data.length && r >= 0) && (c < data[r].length && c >= 0));
     }
 
     public void setValue(int r, int c, double val){
@@ -25,6 +47,44 @@ public class Matrix2D {
         else {
             return 0;
         }
+    }
+
+    public int getRowCnt(){
+        return data.length;
+    }
+    
+    public int getColCnt(){
+        return data[0].length;
+    }
+
+    public Matrix2D multiply(Matrix2D other){
+        Matrix2D result = new Matrix2D(getRowCnt(), getColCnt());
+        for (int i = 0; i < getRowCnt(); ++i){
+            for (int j = 0; j < getColCnt(); ++j){
+                for (int k = 0; k < getColCnt(); ++k){
+                    result.data[i][j] += getValue(i, k) * other.getValue(k, j);
+                }
+            }
+        }
+        return result;
+    }
+
+    public static Matrix2D makePoint2D (double x, double y){
+        Matrix2D v = new Matrix2D(3, 1);
+        v.setValue(0, 0, x);
+        v.setValue(1, 0, y);
+        v.setValue(2, 0, 1);
+        return v;
+    }
+
+    public static Matrix2D makeTranslate2D(double xoff, double yoff){
+        Matrix2D m = new Matrix2D(3, 3);
+        m.setValue(0, 0, 1);
+        m.setValue(1, 1, 1);
+        m.setValue(2, 2, 1);
+        m.setValue(0, 2, xoff);
+        m.setValue(1, 2, yoff);
+        return m;
     }
 
 }
