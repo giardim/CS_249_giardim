@@ -17,6 +17,15 @@ public class Matrix2D {
         }
     }
 
+    public Matrix2D (Matrix2D other){
+        data = new double[other.getRowCnt()][other.getColCnt()];
+        for (int i = 0; i < data.length; ++i){
+            for (int j = 0; j < data[i].length; ++j){
+                data[i][j] = other.getValue(i, j);
+            }
+        }
+    }
+
     public String toString(){
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < data.length; ++i){
