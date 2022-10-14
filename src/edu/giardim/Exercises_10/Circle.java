@@ -3,8 +3,10 @@ package edu.giardim.Exercises_10;
 import edu.giardim.Exercises_09.Matrix2D;
 
 public class Circle {
-    private double radius = 1.0;
-    private Matrix2D pos = Matrix2D.makePoint2D(0, 0);
+    private static final double DEFAULT_RADIUS = 1.0;
+    private static final Matrix2D DEFAULT_POS = Matrix2D.makePoint2D(0,0);
+    private double radius = DEFAULT_RADIUS;
+    private Matrix2D pos = DEFAULT_POS;
 
     public Circle(){
         //do nothing
