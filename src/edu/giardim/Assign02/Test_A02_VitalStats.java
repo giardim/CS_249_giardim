@@ -4,7 +4,7 @@ package edu.giardim.Assign02;
 // Leave this realemj alone
 import edu.realemj.Testing.*;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 
 public class Test_A02_VitalStats {
 
