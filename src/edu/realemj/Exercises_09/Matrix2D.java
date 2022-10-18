@@ -70,14 +70,14 @@ public class Matrix2D {
     public Matrix2D multiply(Matrix2D other) {
         // (a x b) * (b x c) = (a x c)
         // (3 x 3) * (3 x 1) = (3 x 1)
-        Matrix2D result = new Matrix2D( getRowCnt(), 
+        Matrix2D result = new Matrix2D( this.getRowCnt(), 
                                         other.getColCnt());
-        for(int i = 0; i < getRowCnt(); i++) {
+        for(int i = 0; i < this.getRowCnt(); i++) {
             for(int j = 0; j < other.getColCnt(); j++) {
                 // Destination: result[i][j]
-                for(int k = 0; k < getColCnt(); k++) {
+                for(int k = 0; k < this.getColCnt(); k++) {
                     result.data[i][j] += 
-                        getValue(i,k)*other.getValue(k,j);
+                        this.getValue(i,k)*other.getValue(k,j);
                 }
             }
         }
