@@ -1,3 +1,7 @@
 bin/*
 *.class
+src/edu/realemj/Assign01/Tidings.java 
 src/edu/realemj/Assign02/VitalStats.java
+src/edu/realemj/Assign03/Letterhead.java
+src/edu/realemj/Assign03/LetterPrinter.java
+
