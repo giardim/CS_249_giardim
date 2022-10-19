@@ -21,18 +21,4 @@ public class LetterHead {
     public void setNames(String name){
         //dosomething
     }
-
-    public void setBoundaryChar(char boundaryChar){
-        //do something
-    }
-
-    public void setSlogan (String [] sloganLines){
-        //do something
-    }
-
-    public String toString(){
-        //do something
-    }
-
-    
 }
