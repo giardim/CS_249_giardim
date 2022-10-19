@@ -7,7 +7,7 @@ public class LetterPrinter {
     public static void main (String [] args){
         Scanner input = new Scanner(System.in);
         Letterhead header = askForLetterheadData(input);
-        System.out.println("Your new letter head:");
+        System.out.println("Your new letterhead:");
         System.out.println(header.toString());
         
     }

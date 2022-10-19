@@ -83,7 +83,7 @@ public class Letterhead {
                 padding = 38;
             }else{
                 sb.append(" " + sloganLines[i]);
-                padding = 38 - sloganLines[i].length();
+                padding = 37 - sloganLines[i].length();
             }
             for (int j = 0; j < padding; ++j){
                 sb.append(" ");
