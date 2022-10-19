@@ -1,20 +1,17 @@
 package edu.giardim.Assign03;
 
-import java.util.*;
-
-public class LetterHead {
-    
+public class Letterhead {
     private String name;
     private String [] sloganLines = new String[4];
     private char boundaryChar;
 
-    public LetterHead (String name, String [] sloganLines, char boundaryChar){
+    public Letterhead (String name, String [] sloganLines, char boundaryChar){
         this.name = name;
         this.boundaryChar = boundaryChar;
 
         for (int i = 0; i < sloganLines.length; ++i){
             if (sloganLines[i] == null){
-                this.sloganLines[i] = " ";
+                this.sloganLines[i] = "";
             }
             else{
                 this.sloganLines[i] = sloganLines[i];
@@ -31,10 +28,10 @@ public class LetterHead {
         for (String s : sloganLines){
             if (s != null){
                 sb.append(s);
+                sb.append("\n");
             }else{
-                sb.append(" ");
+                sb.append("");
             } 
-            sb.append("\n");
         }
         String slogan = sb.toString();
         return slogan;
@@ -55,7 +52,7 @@ public class LetterHead {
     public void setSlogan(String [] sloganLines){
         for (int i = 0; i < sloganLines.length; ++i){
             if (sloganLines[i] == null){
-                this.sloganLines[i] = " ";
+                this.sloganLines[i] = "";
             }
             else{
                 this.sloganLines[i] = sloganLines[i];
@@ -69,9 +66,9 @@ public class LetterHead {
         for (int i = 0; i < 40; ++i){
             sb.append(boundaryChar);
         }
-        sb.append("\n" + boundaryChar + name);
+        sb.append("\n" + boundaryChar + " " + name);
         padding = 38 - name.length();
-        for (int i = 0; i < padding; ++i){
+        for (int i = 0; i < padding - 1; ++i){
             sb.append(" ");
         }
         sb.append(boundaryChar + "\n" + boundaryChar);
@@ -85,7 +82,7 @@ public class LetterHead {
                 sb.append("");
                 padding = 38;
             }else{
-                sb.append(sloganLines[i]);
+                sb.append(" " + sloganLines[i]);
                 padding = 38 - sloganLines[i].length();
             }
             for (int j = 0; j < padding; ++j){
@@ -97,6 +94,7 @@ public class LetterHead {
         for (int i = 0; i < 40; ++i){
             sb.append(boundaryChar);
         }
+        sb.append("\n");
         String letter = sb.toString();
         return letter;
     }    
