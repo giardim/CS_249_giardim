@@ -114,7 +114,7 @@ public class Letterhead {
         }
         sb.append("\n");
 
-        //Build and return the letter
+        //Build and return the letterhead
         String letter = sb.toString();
         return letter;
     }    
