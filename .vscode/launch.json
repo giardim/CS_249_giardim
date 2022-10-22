@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LetterPrinter",
+            "request": "launch",
+            "mainClass": "edu.giardim.Assign03.LetterPrinter",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch CircleLand",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_10.CircleLand",
