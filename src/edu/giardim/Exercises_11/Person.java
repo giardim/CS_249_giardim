@@ -27,4 +27,8 @@ public class Person {
     public void kill(){
         alive = false;
     }
+
+    public String toString(){
+        return name;
+    }
 }
