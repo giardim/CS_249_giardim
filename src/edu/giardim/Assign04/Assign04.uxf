@@ -1,0 +1,16 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>110</x><y>120</y><w>350</w><h>270</h></coordinates><panel_attributes>CharImage
+--
+-rowCnt : int
+-colCnt : int
+-fillChar : char
+-charArray : char [][]
+--
++CharImage(rowCnt : int, colCnt : int, fillChar : char)
++clear() : void
++getRowCnt() : int
++getColCnt() : int
++isValidPosition(row : int, col : int) : boolean
++getPos(row : int, col : int) : char
++setPos (row : int, col : int, c : char) : boolean
++toString() : String
++getMapString() : String</panel_attributes><additional_attributes></additional_attributes></element></diagram>
