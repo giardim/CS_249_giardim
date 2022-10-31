@@ -20,6 +20,11 @@ public class ShapeLand {
         System.out.println(c);
         System.out.println(c2);
         System.out.println(c3);
+
+        //Cannot do this, circle does not have a constructor with
+        // a string perameter
+        // String g = "Hello";
+        // Circle c4 = new Circle(g);
     }
 
 }
