@@ -3,7 +3,7 @@ package edu.realemj.Exercises_12;
 import edu.realemj.Exercises_09.Matrix2D;
 
 public class Shape {
-    private boolean filled = false;
+    protected boolean filled = false;
     private Matrix2D center = Matrix2D.makePoint2D(0,0);
 
     public Shape() {}
@@ -23,4 +23,17 @@ public class Shape {
     public void setCenter(Matrix2D center) {
         this.center = new Matrix2D(center);
     }    
+
+    public String toString() {
+        String s = "Shape at ";
+        s += center.toCoordString();
+        s += ", ";
+        if(filled) {
+            s += "filled";
+        }
+        else {
+            s += "empty";
+        }
+        return s;
+    }
 }

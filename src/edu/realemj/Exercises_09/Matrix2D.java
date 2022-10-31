@@ -37,6 +37,18 @@ public class Matrix2D {
         return sb.toString();
     }
 
+    public String toCoordString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("(");
+        for(int i = 0; i < data.length; i++) {
+            for(int j = 0; j < data[i].length; j++) {
+                sb.append(data[i][j] + ",");
+            }            
+        }
+        sb.append(")");
+        return sb.toString();
+    }
+
     public boolean isInBounds(int r, int c) {
         return (r < data.length && 
                 r >= 0 && 

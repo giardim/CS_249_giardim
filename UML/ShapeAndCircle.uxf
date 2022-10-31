@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>80</x><y>10</y><w>240</w><h>180</h></coordinates><panel_attributes>Shape
+--
+# filled:boolean
+- center:Matrix2D
+--
++Shape()
++Shape(filled:boolean, center:Matrix2D)
++isFilled(): boolean
++getCenter(): Matrix2D
++setFilled(filled:boolean):void
++setCenter(center:Matrix2D):void
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>270</y><w>330</w><h>160</h></coordinates><panel_attributes>Circle
+--
+- radius:double
+--
++Circle()
++Circle(radius:double)
++Circle(filled:boolean, center:Matrix2D)
++Circle(radius:double, filled:boolean, center:Matrix2D)
++getRadius():double
++setRadius(radius:double):void
++toString():String
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>180</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element></diagram>
