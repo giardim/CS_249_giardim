@@ -44,7 +44,29 @@ public class Circle extends Shape{
 
     public String toString(){
         String s = super.toString();
+        s = "Circle -> " + s; 
         s += ", radius " + radius;
         return s;
     }
+
+    public double getArea(){
+        return Math.PI*radius*radius;
+    }
+
+    public static String getNameOfShape(){
+        return "Circle";
+    }
+
+    @Override
+    public boolean equals(Object other){
+        boolean isEqual = false;
+        if(other instanceof Circle co){
+            if (Math.abs(radius - co.radius) < 1e-15 && super.equals(co)){
+                isEqual = true;
+            }
+        }
+        return isEqual;
+    }
+
+
 }
