@@ -1,6 +1,7 @@
 package edu.giardim.Exercises_12;
 
 import edu.giardim.Exercises_09.Matrix2D;
+import edu.giardim.Exercises_13.InvalidRadiusException;
 
 public class Circle extends Shape{
     private double radius = 1.0;
@@ -9,7 +10,7 @@ public class Circle extends Shape{
         //do nothing
     }
 
-    public Circle(double radius){
+    public Circle(double radius) throws InvalidRadiusException{
         setRadius(radius);
     }
 
@@ -22,7 +23,7 @@ public class Circle extends Shape{
         // setCenter(center);
     }
 
-    public Circle (double radius, boolean filled, Matrix2D center){
+    public Circle (double radius, boolean filled, Matrix2D center) throws InvalidRadiusException{
         super(filled, center);
         setRadius(radius);
         // //Filled is protected so we can acces it in circle
@@ -36,9 +37,11 @@ public class Circle extends Shape{
         return radius;
     }
 
-    public void setRadius(double radius){
+    public void setRadius(double radius) throws InvalidRadiusException{
         if (radius >= 0){
             this.radius = radius;
+        } else{
+            throw new InvalidRadiusException("No negative radii " + radius);
         }
     }
 

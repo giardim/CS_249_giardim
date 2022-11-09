@@ -1,6 +1,7 @@
 package edu.giardim.Exercises_12;
 
 import edu.giardim.Exercises_09.Matrix2D;
+import edu.giardim.Exercises_13.InvalidRadiusException;
 
 public class ShapeLand {
     public static void main (String [] args){
@@ -13,13 +14,16 @@ public class ShapeLand {
 
         Circle c2 = new Circle(true, Matrix2D.makePoint2D(3, 5));
         System.out.println(c2.isFilled());
-        Circle c3 = new Circle(7.8, false, Matrix2D.makePoint2D(-2, 9.5));
-
         System.out.println(s);
         System.out.println(s2);
         System.out.println(c);
         System.out.println(c2);
-        System.out.println(c3);
+        try{
+            Circle c3 = new Circle(7.8, false, Matrix2D.makePoint2D(-2, 9.5));
+            System.out.println(c3);
+        } catch(InvalidRadiusException e) {
+            System.err.println(e);
+        }
 
         //Cannot do this, circle does not have a constructor with
         // a string perameter
@@ -36,37 +40,47 @@ public class ShapeLand {
         //Declared type = shape
         //Dynamic Binding - At runtime, deciding what version of method to use
         //      based off of actual type
-        Shape sReallyC = new Circle(5.6);
-        Shape sReallyR = new Rectangle(3, 9);
+        try{
+            Shape sReallyC = new Circle(5.6);
+            Shape sReallyR = new Rectangle(3, 9);
 
-        System.out.println(sReallyC);
-        System.out.println(sReallyR);
+            System.out.println(sReallyC);
+            System.out.println(sReallyR);
 
-        Shape [] myShapes = new Shape[4];
-        myShapes[0] = s;
-        myShapes[1] = sReallyC;
-        myShapes[2] = sReallyR;
-        myShapes[3] = new Square(9);
+            Shape [] myShapes = new Shape[4];
+            myShapes[0] = s;
+            myShapes[1] = sReallyC;
+            myShapes[2] = sReallyR;
+            myShapes[3] = new Square(9);
 
-        System.out.println("My shapes: ");
-        for(Shape t : myShapes){
-            System.out.println(t);
-            printArea(t);
+            System.out.println("My shapes: ");
+            for(Shape t : myShapes){
+                System.out.println(t);
+                printArea(t);
+            }
+        }
+        catch(InvalidRadiusException e){
+            System.err.println(e);
         }
 
         printShape(c2);
+        
+        try{
+            
+            Circle masterc = new Circle(5.7, true, Matrix2D.makePoint2D(1, 2));
+            Circle diffRad = new Circle(9.1, true, Matrix2D.makePoint2D(1, 2));
+            Circle diffFilled = new Circle(5.7, false, Matrix2D.makePoint2D(1, 2)   );
+            Circle diffCenter = new Circle(5.7, true, Matrix2D.makePoint2D(3, 4))   ;
 
-        Circle masterc = new Circle(5.7, true, Matrix2D.makePoint2D(1, 2));
-        Circle diffRad = new Circle(9.1, true, Matrix2D.makePoint2D(1, 2));
-        Circle diffFilled = new Circle(5.7, false, Matrix2D.makePoint2D(1, 2));
-        Circle diffCenter = new Circle(5.7, true, Matrix2D.makePoint2D(3, 4));
-
-        System.out.println(masterc.equals(s));        
-        System.out.println(masterc.equals(diffRad));
-        System.out.println(masterc.equals(diffFilled));
-        System.out.println(masterc.equals(diffCenter));
-    }
-
+            System.out.println(masterc.equals(s));        
+            System.out.println(masterc.equals(diffRad));
+            System.out.println(masterc.equals(diffFilled));
+            System.out.println(masterc.equals(diffCenter));
+        } catch (InvalidRadiusException e){
+            System.err.println(e);
+        }
+}
+    
     public static void printShape(Shape s){
         System.out.println("MY GLORIOUS SHAPE: " + s);
     }
