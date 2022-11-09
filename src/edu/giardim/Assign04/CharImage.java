@@ -14,7 +14,7 @@ public class CharImage {
     private int rowCnt;
     private int colCnt;
     private char fillChar;
-    char [][] charArray;
+    private char [][] charArray;
     
     //Constructor
     public CharImage(int rowCnt, int colCnt, char fillChar){
