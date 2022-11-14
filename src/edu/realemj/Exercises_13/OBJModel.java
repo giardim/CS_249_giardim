@@ -24,9 +24,36 @@ public class OBJModel {
                     // ? ??????
                     // vt ??????
                     Scanner tokens = new Scanner(line);
-
+                    String first = tokens.next();
+                    switch(first) {
+                        case "v" -> {
+                            double x = tokens.nextDouble();
+                            double y = tokens.nextDouble();
+                            double z = tokens.nextDouble();
+                            Matrix2D v = Matrix2D.makePoint3D(x, y, z);
+                            vertices.add(v);
+                        }
+                        case "f" -> {
+                            int i0 = tokens.nextInt();
+                            int i1 = tokens.nextInt();
+                            int i2 = tokens.nextInt();
+                            indices.add(i0);
+                            indices.add(i1);
+                            indices.add(i2);
+                        }
+                        default -> {}
+                    }
                 }
             }
+        }
+    }
+
+    public void scale(double sx, double sy, double sz) {
+        Matrix2D m = Matrix2D.makeScale3D(sx, sy, sz);
+        for(int i = 0; i < vertices.size(); i++) {
+            Matrix2D v = vertices.get(i);
+            v = m.multiply(v);
+            vertices.set(i, v);
         }
     }
 
