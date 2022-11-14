@@ -1,4 +1,4 @@
-package edu.realemj.Assign05;
+package edu.giardim.Assign05;
 // NOTE: CHANGE realemj to YOUR SITNETID!!!
 
 import edu.realemj.Testing.GeneralTesting;

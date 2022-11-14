@@ -1,4 +1,4 @@
-package edu.realemj.Assign05;
+package edu.giardim.Assign05;
 
 import edu.realemj.Testing.GeneralTesting;
 import org.testng.Assert;
