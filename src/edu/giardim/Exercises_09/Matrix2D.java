@@ -101,6 +101,15 @@ public class Matrix2D {
         return v;
     }
 
+    public static Matrix2D makePoint3D (double x, double y, double z){
+        Matrix2D v = new Matrix2D(3, 1);
+        v.setValue(0, 0, x);
+        v.setValue(1, 0, y);
+        v.setValue(2, 0, z);
+        v.setValue(3, 0, 1);
+        return v;
+    }
+
     public static Matrix2D makeTranslate2D(double xoff, double yoff){
         Matrix2D m = new Matrix2D(3, 3);
         m.setValue(0, 0, 1);
@@ -109,6 +118,10 @@ public class Matrix2D {
         m.setValue(0, 2, xoff);
         m.setValue(1, 2, yoff);
         return m;
+    }
+
+    public String makePoint3DString(){
+        return data[0][0] + " " + data[1][0] + " " + data[2][0];
     }
 
     @Override 
