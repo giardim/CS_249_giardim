@@ -7,6 +7,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BunnyMadness",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_13.BunnyMadness",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch TestDrive",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_13.TestDrive",
