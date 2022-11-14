@@ -3,7 +3,7 @@ package edu.giardim.Assign03;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Test_A03_Letterhead {
+public class Test_A03_Letterhead { 
 
     private String [] allNames = {
             "Empty Industries",
