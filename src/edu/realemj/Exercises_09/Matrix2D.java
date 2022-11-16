@@ -128,6 +128,15 @@ public class Matrix2D {
         return m;
     }
 
+    public static Matrix2D makeScale3D(double sx, double sy, double sz) {
+        Matrix2D m = new Matrix2D(4,4);
+        m.setValue(0, 0, sx);
+        m.setValue(1, 1, sy);
+        m.setValue(2, 2, sz);
+        m.setValue(3, 3, 1.0);        
+        return m;
+    }
+
     @Override
     public boolean equals(Object other) {
         boolean isEqual = false;
