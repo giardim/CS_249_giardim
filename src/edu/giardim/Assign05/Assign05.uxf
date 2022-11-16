@@ -1,28 +1,28 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>52</x><y>170</y><w>234</w><h>156</h></coordinates><panel_attributes>Giant
+<diagram program="umletino" version="15.0.0"><zoom_level>13</zoom_level><element><id>UMLClass</id><coordinates><x>247</x><y>19</y><w>234</w><h>156</h></coordinates><panel_attributes>Giant
 --
 -name : String
 --
 +Giant(name:string)
 +getName():String
 +setName(name:String):void
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>443</y><w>169</w><h>117</h></coordinates><panel_attributes>Troll
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>195</x><y>292</y><w>169</w><h>117</h></coordinates><panel_attributes>Troll
 --
 --
 +Troll(name:String)
 +cook():String
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>208</x><y>443</y><w>195</w><h>117</h></coordinates><panel_attributes>Tree
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>403</x><y>292</y><w>195</w><h>117</h></coordinates><panel_attributes>Tree
 --
 --
 +Tree(name:String)
 +speak():String
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>651</y><w>156</w><h>117</h></coordinates><panel_attributes>Ent
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>500</y><w>156</w><h>117</h></coordinates><panel_attributes>Ent
 --
 --
 +Ent(name:String)
 +speak():String
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>651</y><w>169</w><h>117</h></coordinates><panel_attributes>Huorn
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>325</x><y>500</y><w>169</w><h>117</h></coordinates><panel_attributes>Huorn
 --
 --
 +Huorn(name:String)
 +speak():String
-+toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>169</x><y>547</y><w>104</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>547</y><w>117</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;80</additional_attributes></element><element><id>Relation</id><coordinates><x>52</x><y>313</y><w>117</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>195</x><y>313</y><w>117</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;100</additional_attributes></element></diagram>
++toString():String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>396</y><w>117</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>507</x><y>396</y><w>117</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;80</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>162</y><w>104</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>162</y><w>117</w><h>156</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;70;100</additional_attributes></element></diagram>
