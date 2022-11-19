@@ -9,7 +9,7 @@
 
 package edu.giardim.Assign04;
 
-public class CharImage {
+public class CharImage { 
     //Set variables
     private int rowCnt;
     private int colCnt;
