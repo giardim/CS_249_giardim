@@ -7,6 +7,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BearSimulator",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_15.Strategy.BearSimulator",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortCircles",
+            "request": "launch",
+            "mainClass": "edu.giardim.Exercises_14.SortCircles",
+            "projectName": "CS_249_giardim_3d34c34e"
+        },
+        {
+            "type": "java",
             "name": "Launch QuestionGame",
             "request": "launch",
             "mainClass": "edu.giardim.Exercises_14.TwentyQuestions.QuestionGame",
