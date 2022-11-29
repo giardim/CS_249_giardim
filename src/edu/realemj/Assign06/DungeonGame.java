@@ -1,0 +1,33 @@
+package edu.realemj.Assign06;
+//NOTE: CHANGE realemj to YOUR SITNETID!!!
+
+import java.io.File;
+import java.util.Scanner;
+
+public class DungeonGame {
+    
+    public static void main(String [] args) {
+    	// Create game state
+        GameState gameState = new GameState();
+
+		// Ask user for level name
+		Scanner inputUser = new Scanner(System.in);
+		System.out.println("Enter level filename:");
+		String levelName = inputUser.nextLine();
+		inputUser.close();
+
+		try (
+			// Open level file
+			Scanner levelFile = new Scanner(new File(levelName));
+		) {	  
+            gameState.load(levelFile);
+		}
+		catch(Exception e) {
+		    System.err.println("Game File Error: " + e.getMessage());
+		    //e.printStackTrace();
+		}
+
+		// Print game state
+        System.out.println(gameState);		
+	}
+}
