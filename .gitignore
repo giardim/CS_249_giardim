@@ -12,3 +12,15 @@ src/edu/realemj/Assign05/Huorn.java
 src/edu/realemj/Assign05/Tree.java
 src/edu/realemj/Assign05/Troll.java
 
+src/edu/realemj/Assign06/Book.java
+src/edu/realemj/Assign06/Creature.java
+src/edu/realemj/Assign06/Drawable.java
+src/edu/realemj/Assign06/GameFileException.java
+src/edu/realemj/Assign06/GameState.java
+src/edu/realemj/Assign06/Item.java
+src/edu/realemj/Assign06/Loadable.java
+src/edu/realemj/Assign06/Rat.java
+src/edu/realemj/Assign06/Skeleton.java
+
+realemj_*.txt
+
