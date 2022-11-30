@@ -37,12 +37,12 @@ public class Item implements Loadable{
 
     public void load(Scanner input) throws GameFileException{
         try{
-            input.next(this.id);
-            input.nextInt(this.value);
-        }catch (Exception e){
+            id = input.next();
+            value = input.nextInt();
+        } catch (Exception e){
             this.id = "";
             this.value = 0;
-            throw new GameFileException("Error loading item");
+            throw new GameFileException("Error loading Item", e);
         }
     }
 }
