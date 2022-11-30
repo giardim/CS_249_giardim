@@ -11,6 +11,9 @@ public class ConsoleReader {
     }
 
     public static ConsoleReader getInstance(){
+        if (instance == null){
+            instance = new ConsoleReader();
+        }
         return instance;
     }
 
