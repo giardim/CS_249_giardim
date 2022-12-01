@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+<diagram program="umletino" version="15.0.0"><zoom_level>15</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>330</w><h>555</h></coordinates><panel_attributes>Circle
+
+--
+
+-radius: double
+-pos: Matrix2D
+_-DEFAULT_RADIUS: double_
+_-DEFAULT_POS: Matrix2D_
+
+--
+
++Circle()
++Circle(radius: double)
++Circle(pos: Matrix2D)
++Circle(radius: double, pos: Matrix2D
++Circle(other: Circle)
+
+
++toString(): String
++getRadius(): double
++setRadius(radius: double): void
++getCenter(): Matrix2D
++setCenter(p: Matrix2D): void
+=======
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>70</y><w>220</w><h>300</h></coordinates><panel_attributes>Circle
+--
+-radius:double
+-pos:Matrix2D
+_-DEFAULT_RADIUS:double_
+_-DEFAULT_POS:Matrix2D_
+--
++Circle()
++Circle(radius:double)
++Circle(pos:Matrix2D)
++Circle(radius:double, pos:Matrix2D)
++Circle(other:Circle)
+
++toString(): String
++getRadius(): double
++setRadius(radius:double): void
++getCenter(): Matrix2D
++setCenter(p:Matrix2D): void
+>>>>>>> Upstream/main
++getArea(): double
++getPerimeter(): double
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

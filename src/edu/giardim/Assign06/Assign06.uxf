@@ -1,0 +1,58 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>6</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>198</y><w>108</w><h>114</h></coordinates><panel_attributes>Item
+--
+-id:String
+-value:int
+--
++Item()
++Item(id:String, value:int)
++getID():String
++getValue():int
++setID(id:String):void
++setValue(value:int):void
++toString():String
++load(input:Scanner):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>132</x><y>414</y><w>138</w><h>96</h></coordinates><panel_attributes>Book
+--
+-skill:String
+--
++Book()
++Book(id:String, value:int, skill:String)
++getSkill():String
++setSkill(skill:String):void
++read():void
++toString():String
++load(input:Scanner):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>204</y><w>108</w><h>108</h></coordinates><panel_attributes>/Creature/
+--
+-row:int
+-col:int
+--
+#Creature()
+#Creature(row:int, col:int)
++getRow():int
++getCol():int
++setRow(row:int):void
++setCol(col:int):void
++load(input:Scanner):void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>282</x><y>414</y><w>108</w><h>72</h></coordinates><panel_attributes>Rat
+--
+--
++Rat()
++Rat(row:int, col:int)
++toString():String
++draw(map:CharImage):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>414</y><w>108</w><h>72</h></coordinates><panel_attributes>Skeleton
+--
+--
++Skeleton()
++Skeleton(row:int, col:int)
++toString():String
++draw(map:CharImage):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>276</x><y>84</y><w>108</w><h>42</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Drawable/
+--
+--
+/+draw(map:CharImage):void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>156</x><y>84</y><w>96</w><h>42</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Loadable/
+--
+--
+/+load(input:Scanner):void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>306</y><w>18</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>306</y><w>66</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>306</y><w>72</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;100;180</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>120</y><w>18</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>204</x><y>42</y><w>300</w><h>174</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;70;10;10;480;10;480;270;380;270</additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>120</y><w>18</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element></diagram>
