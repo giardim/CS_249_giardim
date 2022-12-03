@@ -43,7 +43,7 @@ public class Test_A06_DungeonGame {
                         INVENTORY:   
 
                         """, 
-                        "Game File Error: NotARealFile.txt (The system cannot find the file specified)\n"),
+                        "Game File Error: NotARealFile.txt not found!\n"),
 
                 new GeneralTesting.OutPack(
                         """

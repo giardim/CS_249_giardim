@@ -2,6 +2,7 @@ package edu.giardim.Assign06;
 //NOTE: CHANGE realemj to YOUR SITNETID!!!
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class DungeonGame {
@@ -21,6 +22,9 @@ public class DungeonGame {
 			Scanner levelFile = new Scanner(new File(levelName));
 		) {	  
             gameState.load(levelFile);
+		}
+		catch(FileNotFoundException e) {
+			System.err.println("Game File Error: " + levelName + " not found!");
 		}
 		catch(Exception e) {
 		    System.err.println("Game File Error: " + e.getMessage());
