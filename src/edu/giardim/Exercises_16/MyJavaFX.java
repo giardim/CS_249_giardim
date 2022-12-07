@@ -2,7 +2,11 @@ package edu.giardim.Exercises_16;
 
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
+
+import javax.swing.Action;
+
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
@@ -40,11 +44,28 @@ public class MyJavaFX extends javafx.application.Application{
         pane.add(allButtons[3], 2, 2);
         pane.add(allButtons[4], 1, 1);
         
-        ButtonResponder br = new ButtonResponder();
-        allButtons[0].setOnAction(br);
-        for (Button b : allButtons){
-            b.setOnAction(br);
-        }
+
+        //Regular inner class
+        // ButtonResponder br = new ButtonResponder();
+        // allButtons[0].setOnAction(br);
+        // for (Button b : allButtons){
+        //     b.setOnAction(br);
+        // }
+
+        //Anonymous inner class
+        // EventHandler<ActionEvent> br = new EventHandler<ActionEvent>() {
+        //     public void handle(ActionEvent event){
+        //         Object obj = event.getSource();
+        //         if (obj instanceof Button b){
+        //             String t = b.getText();
+        //             System.out.println("Button: " + t);
+        //         }
+        // };
+
+        //Lamda expression
+        // EventHandler<ActionEvent> br = event ->  {
+            
+        // };
 
 
         // BorderPane pane = new BorderPane();
